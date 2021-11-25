@@ -11,7 +11,7 @@ public class BookDemo {
             System.out.println("------------------------------");
             System.out.println("Book Title : "+book.getBookTitle());
             System.out.println("Book Price : "+book.getPrice()+ " Rs.");
-            System.out.println("------------------------------");
+            System.out.println("---------------");
         }
     }
 }
