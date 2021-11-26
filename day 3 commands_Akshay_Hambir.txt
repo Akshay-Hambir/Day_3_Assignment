@@ -1,0 +1,371 @@
+[akshay.hambir@DM1384 day 3 assignment git]$ git clone https://github.com/Akshay-Hambir/Day_3_Assignment.git
+Cloning into 'Day_3_Assignment'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 18 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (18/18), done.
+[akshay.hambir@DM1384 day 3 assignment git]$ cd Day_3_Assignment/.git/
+branches/ hooks/    info/     logs/     objects/  refs/     
+[akshay.hambir@DM1384 day 3 assignment git]$ cd Day_3_Assignment/
+[akshay.hambir@DM1384 Day_3_Assignment]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[akshay.hambir@DM1384 Day_3_Assignment]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Book.java
+	BookDemo.java
+	BookMain.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+[akshay.hambir@DM1384 Day_3_Assignment]$ git add .
+[akshay.hambir@DM1384 Day_3_Assignment]$ git commit -m "java files added"
+[main af1dd54] java files added
+ 3 files changed, 69 insertions(+)
+ create mode 100644 Book.java
+ create mode 100644 BookDemo.java
+ create mode 100644 BookMain.java
+[akshay.hambir@DM1384 Day_3_Assignment]$ git branch -M main
+[akshay.hambir@DM1384 Day_3_Assignment]$ git push -u main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[akshay.hambir@DM1384 Day_3_Assignment]$ git push -u origin main
+Username for 'https://github.com': Akshay-Hambir
+Password for 'https://Akshay-Hambir@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.03 KiB | 1.03 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Akshay-Hambir/Day_3_Assignment.git
+   1337ed4..af1dd54  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+[akshay.hambir@DM1384 Day_3_Assignment]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	d1.doc
+	d2.doc
+	d3.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+[akshay.hambir@DM1384 Day_3_Assignment]$ touch .gitignore
+[akshay.hambir@DM1384 Day_3_Assignment]$ ls -al
+total 60
+drwxr-xr-x. 3 akshay.hambir domain users 4096 Nov 25 14:48 .
+drwxr-xr-x. 3 akshay.hambir domain users 4096 Nov 25 14:36 ..
+-rw-r--r--. 1 akshay.hambir domain users  545 Oct 28 10:18 BookDemo.java
+-rw-r--r--. 1 akshay.hambir domain users  394 Oct 28 10:18 Book.java
+-rw-r--r--. 1 akshay.hambir domain users  743 Oct 28 10:18 BookMain.java
+-rw-r--r--. 1 akshay.hambir domain users   20 Nov 25 14:47 d1.doc
+-rw-r--r--. 1 akshay.hambir domain users   20 Nov 25 14:47 d2.doc
+-rw-r--r--. 1 akshay.hambir domain users   20 Nov 25 14:47 d3.doc
+drwxr-xr-x. 8 akshay.hambir domain users 4096 Nov 25 14:48 .git
+-rw-r--r--. 1 akshay.hambir domain users    0 Nov 25 14:48 .gitignore
+-rw-r--r--. 1 akshay.hambir domain users   18 Nov 25 14:36 README.md
+-rw-r--r--. 1 akshay.hambir domain users   21 Nov 25 14:36 t1.txt
+-rw-r--r--. 1 akshay.hambir domain users   21 Nov 25 14:36 t2.txt
+-rw-r--r--. 1 akshay.hambir domain users   21 Nov 25 14:36 t3.txt
+-rw-r--r--. 1 akshay.hambir domain users   21 Nov 25 14:36 t4.txt
+-rw-r--r--. 1 akshay.hambir domain users   21 Nov 25 14:36 t5.txt
+[akshay.hambir@DM1384 Day_3_Assignment]$ gedit .gitignore
+[akshay.hambir@DM1384 Day_3_Assignment]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+[akshay.hambir@DM1384 Day_3_Assignment]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   BookDemo.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[akshay.hambir@DM1384 Day_3_Assignment]$ git add .
+[akshay.hambir@DM1384 Day_3_Assignment]$ git commit -m "Java file modified"
+[main 930960b] Java file modified
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+[akshay.hambir@DM1384 Day_3_Assignment]$ git log
+commit 930960b50f0419390aa9c748f323e06c8fe56235 (HEAD -> main)
+Author: Akshay-Hambir <akshay.hambir@datametica.com>
+Date:   Thu Nov 25 14:51:15 2021 +0530
+
+    Java file modified
+
+commit af1dd54290ed9158290292dcbab9719d854058bd (origin/main, origin/HEAD)
+Author: Akshay-Hambir <akshay.hambir@datametica.com>
+Date:   Thu Nov 25 14:43:43 2021 +0530
+
+    java files added
+
+commit 1337ed4af5871d8a3ea5400d2431c0625b024cd3
+Author: Akshay-Hambir <94887209+Akshay-Hambir@users.noreply.github.com>
+Date:   Thu Nov 25 14:34:51 2021 +0530
+
+    Create t5.txt
+
+commit a4b1cc7b1e55b43b94227f11ecb4d81299fd247f
+Author: Akshay-Hambir <94887209+Akshay-Hambir@users.noreply.github.com>
+Date:   Thu Nov 25 14:34:12 2021 +0530
+
+    Create t4.txt
+
+commit 6acd6df30af3f83e597b49dee1e306a806825717
+Author: Akshay-Hambir <94887209+Akshay-Hambir@users.noreply.github.com>
+Date:   Thu Nov 25 14:33:54 2021 +0530
+
+    Create t3.txt
+
+commit dfec1529c3c6a75d09b956e9fd1ca926ea3f7abe
+Author: Akshay-Hambir <94887209+Akshay-Hambir@users.noreply.github.com>
+Date:   Thu Nov 25 14:33:24 2021 +0530
+
+    Create t2.txt
+
+commit 16427ce313d9eb4c30f09e14b44915eaa6a07e4d
+Author: Akshay-Hambir <94887209+Akshay-Hambir@users.noreply.github.com>
+Date:   Thu Nov 25 14:33:01 2021 +0530
+
+    Create t1.txt
+
+commit 6f6da2cc8eb4635c50bb2a329f5c5c7b352a7b8a
+Author: Akshay-Hambir <94887209+Akshay-Hambir@users.noreply.github.com>
+Date:   Thu Nov 25 14:32:22 2021 +0530
+
+    Initial commit
+[akshay.hambir@DM1384 Day_3_Assignment]$ git push -u origin main
+Username for 'https://github.com': Akshay-Hambir
+Password for 'https://Akshay-Hambir@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 354 bytes | 354.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Akshay-Hambir/Day_3_Assignment.git
+   af1dd54..930960b  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+[akshay.hambir@DM1384 Day_3_Assignment]$ git diff dfec1529c3c6a75d09b956e9fd1ca926ea3f7abe
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..5c51117
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++*.doc
+diff --git a/Book.java b/Book.java
+new file mode 100644
+index 0000000..949d962
+--- /dev/null
++++ b/Book.java
+@@ -0,0 +1,22 @@
++package assignments1;
++
++public class Book {
++    private String bookTitle;
++    private float price;
++
++    public String getBookTitle() {
++        return bookTitle;
++    }
++
++    public void setBookTitle(String bookTitle) {
++        this.bookTitle = bookTitle;
++    }
++
++    public float getPrice() {
++        return price;
++    }
++
++    public void setPrice(float price) {
++        this.price = price;
++    }
++}
+diff --git a/BookDemo.java b/BookDemo.java
+new file mode 100644
+index 0000000..67c2407
+--- /dev/null
++++ b/BookDemo.java
+@@ -0,0 +1,17 @@
++package assignments1;
++
++public class BookDemo {
++    public void createBook(Book b, String bookName, float bookPrice){
++        b.setBookTitle(bookName);
++        b.setPrice(bookPrice);
++    }
++
++    public void showBooks(Book[] b){
++        for(Book book: b){
++            System.out.println("------------------------------");
++            System.out.println("Book Title : "+book.getBookTitle());
++            System.out.println("Book Price : "+book.getPrice()+ " Rs.");
++            System.out.println("---------------");
++        }
++    }
++}
+diff --git a/BookMain.java b/BookMain.java
+new file mode 100644
+index 0000000..6be2810
+--- /dev/null
++++ b/BookMain.java
+@@ -0,0 +1,30 @@
++package assignments1;
++
++public class BookMain {
++    private Book[] books;
++    public void createBook(int n){
++        books = new Book[n];
++        books[0] = new Book();
++        books[1] = new Book();
++
++        books[0].setBookTitle("java Programming");
++        books[0].setPrice(350.50f);
++
++        books[1].setBookTitle("Let Us C");
++        books[1].setPrice(200.00f);
++    }
++
++    public void showBooks(){
++        System.out.println("Book Title \t Book Price");
++        for(Book b: books ){
++            System.out.println(b.getBookTitle()+" \t "+b.getPrice());
++        }
++    }
++    public static void main(String[] args) {
++        int n;
++        n=2;
++        BookMain bm = new BookMain();
++        bm.createBook(n);
++        bm.showBooks();
++    }
++}
+diff --git a/t3.txt b/t3.txt
+new file mode 100644
+index 0000000..e5fa767
+--- /dev/null
++++ b/t3.txt
+@@ -0,0 +1 @@
++This is text file 3.
+diff --git a/t4.txt b/t4.txt
+new file mode 100644
+index 0000000..2984c21
+--- /dev/null
++++ b/t4.txt
+@@ -0,0 +1 @@
++This is text file 4.
+diff --git a/t5.txt b/t5.txt
+new file mode 100644
+index 0000000..06066a6
+--- /dev/null
++++ b/t5.txt
+@@ -0,0 +1 @@
++This is text file 5.
+
+[1]+  Stopped                 git diff dfec1529c3c6a75d09b956e9fd1ca926ea3f7abe
+[akshay.hambir@DM1384 Day_3_Assignment]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    BookMain.java
+	deleted:    t3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[akshay.hambir@DM1384 Day_3_Assignment]$ git rm BookMain.java
+rm 'BookMain.java'
+[akshay.hambir@DM1384 Day_3_Assignment]$ git rm t3.txt
+rm 't3.txt'
+[akshay.hambir@DM1384 Day_3_Assignment]$ git commit -m "Commit after removal of file"
+[main e465d72] Commit after removal of file
+ 2 files changed, 31 deletions(-)
+ delete mode 100644 BookMain.java
+ delete mode 100644 t3.txt
+[akshay.hambir@DM1384 Day_3_Assignment]$ git checkout HEAD t3.txt
+error: pathspec 't3.txt' did not match any file(s) known to git
+[akshay.hambir@DM1384 Day_3_Assignment]$ git fetch --all
+Fetching origin
+[akshay.hambir@DM1384 Day_3_Assignment]$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[akshay.hambir@DM1384 Day_3_Assignment]$ git fetch t3.txt
+fatal: 't3.txt' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[akshay.hambir@DM1384 Day_3_Assignment]$ git fetch origin/main/t3.txt
+fatal: 'origin/main/t3.txt' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[akshay.hambir@DM1384 Day_3_Assignment]$ git fetch origin main
+From https://github.com/Akshay-Hambir/Day_3_Assignment
+ * branch            main       -> FETCH_HEAD
+[akshay.hambir@DM1384 Day_3_Assignment]$ git branch
+* main
+[akshay.hambir@DM1384 Day_3_Assignment]$ ls
+BookDemo.java  Book.java  d1.doc  d2.doc  d3.doc  README.md  t1.txt  t2.txt  t4.txt  t5.txt
+[akshay.hambir@DM1384 Day_3_Assignment]$ git fetch origin
+[akshay.hambir@DM1384 Day_3_Assignment]$ ls
+BookDemo.java  Book.java  d1.doc  d2.doc  d3.doc  README.md  t1.txt  t2.txt  t4.txt  t5.txt
+[akshay.hambir@DM1384 Day_3_Assignment]$ git pull
+Already up to date.
+[akshay.hambir@DM1384 Day_3_Assignment]$ git fetch
+[akshay.hambir@DM1384 Day_3_Assignment]$ git merge
+Already up to date.
+[akshay.hambir@DM1384 Day_3_Assignment]$ git fetch origin main --force
+From https://github.com/Akshay-Hambir/Day_3_Assignment
+ * branch            main       -> FETCH_HEAD
+[akshay.hambir@DM1384 Day_3_Assignment]$ ls
+BookDemo.java  Book.java  d1.doc  d2.doc  d3.doc  README.md  t1.txt  t2.txt  t4.txt  t5.txt
+[akshay.hambir@DM1384 Day_3_Assignment]$ git pull origin --force
+Already up to date.
+[akshay.hambir@DM1384 Day_3_Assignment]$ git reset --hard origin/main
+HEAD is now at 930960b Java file modified
+[akshay.hambir@DM1384 Day_3_Assignment]$ ls
+BookDemo.java  Book.java  BookMain.java  d1.doc  d2.doc  d3.doc  README.md  t1.txt  t2.txt  t3.txt  t4.txt  t5.txt
+[akshay.hambir@DM1384 Day_3_Assignment]$ git push -u origin main
+Username for 'https://github.com': Akshay-Hambir
+Password for 'https://Akshay-Hambir@github.com': 
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Everything up-to-date
+
