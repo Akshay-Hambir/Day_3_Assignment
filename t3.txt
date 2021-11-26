@@ -1,1 +1,2 @@
 This is text file 3.
+This line added by Branch_1.
